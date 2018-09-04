@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1533395313 source:c:\users\sebas\desktop\repositorio\trabajo-practico-programacion-1-cuatrimestre\trabajopracticolaboratorioiprogramacioni\funcionestp.c
+	<stdio.h>
+	<stdlib.h>
+	"ValidacionesTP.h"
+
+1533395313 source:c:\users\sebas\desktop\repositorio\trabajo-practico-programacion-1-cuatrimestre\trabajopracticolaboratorioiprogramacioni\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"FuncionesTP.h"
+	"ValidacionesTP.h"
+
+1533394098 c:\users\sebas\desktop\repositorio\trabajo-practico-programacion-1-cuatrimestre\trabajopracticolaboratorioiprogramacioni\funcionestp.h
+
+1533339943 c:\users\sebas\desktop\repositorio\trabajo-practico-programacion-1-cuatrimestre\trabajopracticolaboratorioiprogramacioni\validacionestp.h
+
+1533394118 source:c:\users\sebas\desktop\repositorio\trabajo-practico-programacion-1-cuatrimestre\trabajopracticolaboratorioiprogramacioni\validacionestp.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
+1536101693 source:c:\users\sebas\desktop\facultad\repositorio\trabajo-practico-programacion-1-cuatrimestre\trabajopracticolaboratorioiprogramacioni\funcionestp.c
+	<stdio.h>
+	<stdlib.h>
+	"ValidacionesTP.h"
+
+1536100473 c:\users\sebas\desktop\facultad\repositorio\trabajo-practico-programacion-1-cuatrimestre\trabajopracticolaboratorioiprogramacioni\validacionestp.h
+
+1536101479 source:c:\users\sebas\desktop\facultad\repositorio\trabajo-practico-programacion-1-cuatrimestre\trabajopracticolaboratorioiprogramacioni\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"FuncionesTP.h"
+	"ValidacionesTP.h"
+
+1536100473 c:\users\sebas\desktop\facultad\repositorio\trabajo-practico-programacion-1-cuatrimestre\trabajopracticolaboratorioiprogramacioni\funcionestp.h
+
+1536101259 source:c:\users\sebas\desktop\facultad\repositorio\trabajo-practico-programacion-1-cuatrimestre\trabajopracticolaboratorioiprogramacioni\validacionestp.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+
