@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1536187688 source:c:\users\sebas\desktop\facultad\repositorio\tp_laboratorio_1\trabajopractico2-laboratorio1\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+	"Validaciones.h"
+
+1536187711 nes.h"
+
+1536187773 source:c:\users\sebas\desktop\facultad\repositorio\tp_laboratorio_1\trabajopractico2-laboratorio1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1536104069 
+
+1536104069 source:c:\users\sebas\desktop\facultad\repositorio\tp_laboratorio_1\trabajopractico2-laboratorio1\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+
+1536187711 source:c:\users\sebas\desktop\facultad\repositorio\tp_laboratorio_1\trabajopractico2-laboratorio1\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayEmployees.h"
+	"Validaciones.h"
+
+1536104072 c:\users\sebas\desktop\facultad\repositorio\tp_laboratorio_1\trabajopractico2-laboratorio1\menu.h
+
+1536187543 c:\users\sebas\desktop\facultad\repositorio\tp_laboratorio_1\trabajopractico2-laboratorio1\arrayemployees.h
+
+1536104067 c:\users\sebas\desktop\facultad\repositorio\tp_laboratorio_1\trabajopractico2-laboratorio1\validaciones.h
+
+1538352428 source:/home/seba18/Desktop/FACULTAD/REPOSITORIO/tp_Laboratorio_1/TrabajoPractico2-Laboratorio1/main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1538499714 /home/seba18/Desktop/FACULTAD/REPOSITORIO/tp_Laboratorio_1/TrabajoPractico2-Laboratorio1/menu.h
+
+1538506620 source:/home/seba18/Desktop/FACULTAD/REPOSITORIO/tp_Laboratorio_1/TrabajoPractico2-Laboratorio1/ArrayEmployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+	"Validaciones.h"
+
+1538507131 /home/seba18/Desktop/FACULTAD/REPOSITORIO/tp_Laboratorio_1/TrabajoPractico2-Laboratorio1/ArrayEmployees.h
+
+1538433688 /home/seba18/Desktop/FACULTAD/REPOSITORIO/tp_Laboratorio_1/TrabajoPractico2-Laboratorio1/Validaciones.h
+
+1538507131 source:/home/seba18/Desktop/FACULTAD/REPOSITORIO/tp_Laboratorio_1/TrabajoPractico2-Laboratorio1/menu.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayEmployees.h"
+	"Validaciones.h"
+
+1538433415 source:/home/seba18/Desktop/FACULTAD/REPOSITORIO/tp_Laboratorio_1/TrabajoPractico2-Laboratorio1/Validaciones.c
+	<stdio_ext.h>
+	<stdlib.h>
+	<string.h>
+	"Validaciones.h"
+
