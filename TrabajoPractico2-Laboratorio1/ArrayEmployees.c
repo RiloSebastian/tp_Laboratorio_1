@@ -302,6 +302,7 @@ int employee_sort(Employee listEmployees[], int len, int order)
                         aux=listEmployees[i];
                         listEmployees[i]=listEmployees[j];
                         listEmployees[j]= aux;
+                        flag = 1;
                     }
                     else if(listEmployees[i].sector == listEmployees[j].sector && strcmp(listEmployees[i].lastName,listEmployees[j].lastName)<0)
                     {
