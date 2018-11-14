@@ -500,9 +500,9 @@ int ll_sort(LinkedList* this, int (*pFunc)(void*,void*), int order)
     int j;
     if(this != NULL && pFunc != NULL && !ll_isEmpty(this) && order < 2 && order >= 0)
     {
-        for(i=0;i<(ll_len(this)-1);i++)
+        for(i=0; i<(ll_len(this)-1); i++)
         {
-            for(j=i+1;j<ll_len(this);j++)
+            for(j=i+1; j<ll_len(this); j++)
             {
                 pElement1=ll_get(this,i);
                 pElement2=ll_get(this,j);
@@ -532,3 +532,68 @@ int ll_sort(LinkedList* this, int (*pFunc)(void*,void*), int order)
     }
     return returnAux;
 }
+
+
+
+/** \brief filtra los elementos de la lista utilizando la funcion criterio recibida como parametro
+            y los agrega a otra lista
+ * \param pList LinkedList* Puntero a la lista
+ * \param pFunc (*pFunc) Puntero a la funcion criterio
+ * \return LinkedList* Retorna  (NULL) Error: si el puntero a la lista es NULL, el puntero a la funcion criterio es NULL o
+                                si la lista esta vacia.
+                                (puntero a nueva lista) Si ok
+ */
+LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*))
+{
+    LinkedList* this2=NULL;
+    void* pElement=NULL;
+    int i;
+
+    if(this != NULL && pFunc != NULL && !ll_isEmpty(this))
+    {
+        this2= ll_newLinkedList();
+        for(i=0; i<ll_len(this); i++)
+        {
+            pElement=ll_get(this,i);
+            if(pFunc(pElement))
+            {
+                ll_add(this2,pElement);
+            }
+        }
+    }
+    return this2;
+}
+
+
+/** \brief rrecorre la lista y realiza una funcion utilizando un elemento de esta
+ * \param pList LinkedList* Puntero a la lista
+ * \param pFunc (*pFunc) Puntero a la funcion
+ * \return LinkedList* Retorna  (-1) Error: si el puntero a la lista es NULL, el puntero a la funcion criterio es NULL o
+                                si la lista esta vacia.
+                                (0) si no se pudo realizar siempre la funcion con exito
+                                (1) Si ok
+ */
+int ll_map(LinkedList* this, int (*pFunc)(void*))
+{
+    int returnAux=-1;
+    void* pElement=NULL;
+    int i;
+
+    if(this != NULL && pFunc != NULL && !ll_isEmpty(this))
+    {
+        returnAux=1;
+        for(i=0;i<ll_len(this);i++)
+        {
+            pElement=ll_get(this,i);
+            if(pFunc(pElement)!=0)
+            {
+                returnAux=0;
+                break;
+            }
+        }
+    }
+    return returnAux;
+}
+
+
+
