@@ -547,6 +547,14 @@ int ll_sort(LinkedList* this, int (*pFunc)(void*,void*), int order)
     return returnAux;
 }
 
+/** \brief  guarda el nodo indicado con un indice en el campo pNext de la LInkedList
+ *
+ * \param this LinkedList* Puntero a la lista
+ * \param nodeIndex int Indice del nodo a obtener
+ * \return Node* Retorna  (-1) Error: si el puntero a la lista es NULL o (si el indice es menor a 0 o mayor al len de la lista)
+                          (0) Si funciono correctamente
+ *
+ */
 int startIterator(LinkedList* this, int nodeIndex)
 {
     int returnAux=-1;
@@ -559,6 +567,13 @@ int startIterator(LinkedList* this, int nodeIndex)
     return returnAux;
 }
 
+/** \brief obtiene el elemento del nodo apuntado en pNext y luego reemplaza ese nodo por el siguiente
+ *
+ * \param this LinkedList* Puntero a la lista
+ * \return Node* Retorna  (NULL) Error: si el puntero a la lista es NULL o (si el indice es menor a 0 o mayor al len de la lista)
+                          (puntero al elemento) Si funciono correctamente
+ *
+ */
 void* ll_getNext(LinkedList* this)
 {
     void* returnAux=NULL;
@@ -604,7 +619,15 @@ LinkedList* ll_filter(LinkedList* this, int (*pFunc)(void*))
     return this2;
 }
 
-
+/** \brief filtra los elementos de la lista utilizando un argumento y la funcion criterio recibidos como parametros
+            y los agrega a otra lista
+ * \param pList LinkedList* Puntero a la lista
+ * \param pFunc (*pFunc) Puntero a la funcion criterio
+ * \param args void* el argumento que recibe la funcion filter
+ * \return LinkedList* Retorna  (NULL) Error: si el puntero a la lista es NULL, el puntero a la funcion criterio es NULL o
+                                si la lista esta vacia.
+                                (puntero a nueva lista) Si ok
+ */
 LinkedList* ll_filterArgs(LinkedList* this, int (*pFunc)(void*,void*), void* args)
 {
     LinkedList* this2=NULL;
